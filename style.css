@@ -1,0 +1,170 @@
+body {
+  font-family: "PT Serif", serif;
+  background-color: #f6f8fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.base {
+  padding: 20px;
+  border-bottom: 1px solid #e1e4e8;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #24292e;
+}
+
+.searchfeed {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e1e4e8;
+  font-size: 16px;
+  transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 5px rgba(3, 102, 214, 0.3);
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #2ea44f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #22863a;
+  transform: translateY(-2px);
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: rotateImage 2s linear infinite;
+}
+
+.about {
+  margin-top: 20px;
+}
+
+.about h4 {
+  font-size: 22px;
+  color: #0366d6;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #586069;
+}
+
+.right {
+  flex: 2;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.follower,
+.following,
+.repo {
+  text-align: center;
+  flex: 1;
+}
+
+.headings {
+  font-size: 18px;
+  color: #24292e;
+}
+
+.count {
+  font-size: 24px;
+  color: #0366d6;
+  margin-top: 10px;
+}
+
+.bottomright .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  background-color: #0366d6;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn a:hover {
+  background-color: #005cc5;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
